@@ -1,0 +1,185 @@
+/*PARA TODA A PÁGINA*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #17f4ea, #00e7ff, #0bd6ff, #78c1ff, #b2a9ff, #b3aaff, #b4aaff, #b5abff, #83c4ff, #48daff, #2cedff, #5ffbf1);
+}
+
+
+/*DIV CLASS DO BODY*/
+.header-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*DIV CONTAINER DO BODY*/
+.container {
+    background-color: rgb(197, 250, 245);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 99;
+}
+
+/*LISTA DO MENU*/
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*NOME DO H1*/
+.logo {
+    color: black;
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo span {
+    color: palevioletred;
+}
+
+/*ALINHAMENTO DO MENU*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*ICONES DO MENU - REMOVER FUNDO*/
+.icones-container-nav {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+/*ICONES DO MENU*/
+.icones-container-nav img {
+    width: 30px;
+    cursor: pointer;  
+}
+
+/*ICONES DO MENU*/
+.icones-container-nav img:first-child {
+    margin-right: 1rem;
+}
+
+/*MENU*/
+nav ul li {
+    color: black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*MOVIMENTO DO MENU*/
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;  
+}
+
+/*BOTÃO DO MENU*/
+.menu-button {
+    display: none;
+}
+
+
+/**/
+.header-button-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/*ESTILO LADO ESQUEDO*/
+.header-button-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-button-left h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-left p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*ESTILIZANDO O BOTÃO*/
+.header-button-left button {
+    background-color: rgb(216, 112, 147);
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: indigo;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+
+}
+
+/*TRANSIÇÃO DE COR DO BOTÃO*/
+.header-button-left button:hover {
+    background-color: rgb(224, 40, 200);
+}
+
+/*ESTILO LADO DIREITO*/
+.header-button-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-right img {
+    width: 90%;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 900px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-button-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: rgb(250, 163, 231);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    }
+}

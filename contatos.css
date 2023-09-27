@@ -1,0 +1,425 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: -2rem;
+	background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+
+.header-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*DIV CONTAINER DO BODY*/
+.container {
+    background-color: rgb(197, 250, 245);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 99;
+}
+
+/*LISTA DO MENU*/
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*NOME DO H1*/
+.logo {
+    color: black;
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo span {
+    color: palevioletred;
+}
+
+/*ALINHAMENTO DO MENU*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*ICONES DO MENU - REMOVER FUNDO*/
+.icones-container-nav {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+/*ICONES DO MENU*/
+.icones-container-nav img {
+    width: 30px;
+    cursor: pointer;  
+}
+
+/*ICONES DO MENU*/
+.icones-container-nav img:first-child {
+    margin-right: 1rem;
+}
+
+/*MENU*/
+nav ul li {
+    color: black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*MOVIMENTO DO MENU*/
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;  
+}
+
+/*BOTÃO DO MENU*/
+.menu-button {
+    display: none;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 1200px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-button-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: rgb(250, 163, 231);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+/*HEADER*/
+h2 {
+    font-size: 70px;
+    color: #940469;
+    font-family: sacramento;
+    padding: 4%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+form {
+    margin-top: -30px;
+    font-size: 1.3rem;
+	font-style: italic;
+	float: left;
+    margin-right: 10px;
+    padding-left: 80px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #340350;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin-top: -5%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+fieldset {
+	color: rgb(7, 7, 7);
+    margin-top: -55px;
+    padding-left: 50px;
+    padding: 15px;
+    font-size: 1.5rem;
+	font-style: italic;
+	width: 60%;
+	border: 1px solid #340350;
+    border-radius: 9px;
+	text-align: center;
+}
+legend {
+    font-size: 1.7rem;
+}
+
+iframe {
+    width: 61.1%;
+	padding: 5px;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+	flex: 1;
+	border: none;
+	clear: right;
+}
+
+.voltar a {
+    color: #1c0586;
+	margin-top: 10px;
+	text-align: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+/*RESPONIVO*/
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+        padding: 2%;
+        text-align: left;
+    }
+
+    form {
+        font-size: 1rem;
+        float: none;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    fieldset {
+        margin-top: -20px;
+        padding-left: 20px;
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        padding: 5px;
+        height: auto;
+    }
+
+    .voltar a {
+        margin-top: 10px;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 20px;
+    }
+}
+
+.gray-background {
+    background-color: #c669f1;
+    
+}
+
+.page-inner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.footer-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: rgb(65, 7, 121);
+    padding: 1rem 4rem;
+    gap: 20rem;
+    width: 90%;
+    font-size: 1.1rem;   
+}
+
+.security *{
+    margin: 1rem 0;
+}
+
+.security> p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #3f034b;
+}
+
+.security> div {
+    display: block;
+}
+
+.security div img {
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*NOME DO H1*/
+.logo-footer {
+    color: black; 
+    text-align: center; 
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo-footer span{
+    color: rgb(224, 22, 157);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(97, 5, 105);
+}
+
+.links-footer h3{
+    color: rgb(46, 1, 40);
+    margin-bottom: 0.8rem;
+}
+
+.links-footer ul {
+    list-style: none;
+}
+.links-footer ul li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.pagamentos h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.pagamentos img {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.copyrigth {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.voltar {
+    margin: 90px;
+    text-align: center;
+    font-size: 23px;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 1200px){
+    .footer-content {
+        display: inline;
+        font-size: 0.8rem;
+    }
+
+    .footer-content div {
+        padding: 1rem;
+    }
+
+    .security div {
+        display: inline;
+    }
+
+    .security div img {
+        width: 120px;
+    }
+
+    
+    .pagamentos h4 {
+        font-size: 16px; 
+        margin: 10px 0; 
+    }
+    
+    .pagamentos img {
+        max-width: 100%;
+    }
+    
+
+    .copyrigth {
+        font-size: 0.8rem;
+    }
+}
+
+/*FOOTER*/
+
+@media (max-width: 1200px){
+    .footer-content {
+        display: inline;
+        font-size: 0.8rem;
+    }
+
+    .footer-content div {
+        padding: 1rem;
+    }
+
+    .security div {
+        display: inline;
+    }
+
+    .security div img {
+        width: 120px;
+    }
+
+    
+    .pagamentos h4 {
+        font-size: 16px; 
+        margin: 10px 0; 
+    }
+    
+    .pagamentos img {
+        max-width: 100%;
+    }
+    
+
+    .copyrigth {
+        font-size: 0.8rem;
+    }
+}
+
+/*FOOTER*/
+
+
+

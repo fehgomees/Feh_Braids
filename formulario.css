@@ -1,0 +1,29 @@
+h1 {
+    color: blueviolet;
+    font-size:x-large ;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#imagnes {
+    background-image: url(imagnes/fundo\ branco\ gana.jpeg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.botao {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.voltar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}

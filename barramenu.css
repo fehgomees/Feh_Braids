@@ -1,0 +1,152 @@
+/*PARA TODA A PÁGINA*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to bottom, #17f4ea, #00e7ff, #0bd6ff, #78c1ff, #b2a9ff, #b3aaff, #b4aaff, #b5abff, #83c4ff, #48daff, #2cedff, #5ffbf1);
+}
+
+
+
+/*DIV CLASS DO BODY*/
+.header-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*DIV CONTAINER DO BODY*/
+.container {
+    background-color: rgb(197, 250, 245);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 99;
+}
+
+/*LISTA DO MENU*/
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*NOME DO H1*/
+.logo {
+    color: black;
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo span {
+    color: palevioletred;
+}
+
+/*ALINHAMENTO DO MENU*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*ICONES DO MENU - REMOVER FUNDO*/
+.icones-container-nav {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+/*ICONES DO MENU*/
+.icones-container-nav img {
+    width: 30px;
+    cursor: pointer;  
+}
+
+/*ICONES DO MENU*/
+.icones-container-nav img:first-child {
+    margin-right: 1rem;
+}
+
+/*MENU*/
+nav ul li {
+    color: black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*MOVIMENTO DO MENU*/
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;  
+}
+
+/*BOTÃO DO MENU*/
+.menu-button {
+    display: none;
+}
+
+
+/*HEADER*/
+
+.gray-background {
+    background-color: #c669f1;
+
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.header-button-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+
+}
+@media (max-width: 1000px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-button-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: rgb(250, 163, 231);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+

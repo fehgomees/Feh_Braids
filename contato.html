@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+
+    <title>Contato</title>
+    
+</head>
+
+<body>
+    <form method="post" action="#">
+        <fieldset>
+            <legend><h2>Contato</h2></legend>
+            <div class="contato-input">
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sobrenome">Email: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <label for="nome">Telefone:</label>
+                            <input type="tel" id="telefone" class="input-telefone" required placeholder="(xx) xxxxx-xxxx">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="caixa">
+                <label for="caixa">Deixe sua dúvida e entraremos em contato.</label><br>
+                <textarea name="caixa" cols="70" rows="10" id="caixa" required></textarea>
+            </div>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+            </fieldset>
+            <div class="botao">
+                <input type="submit" name="botao__enviar" value="Enviar" required>
+            </div>
+        </fieldset>
+        <div class="voltar">
+            <a href="index.html">Voltar à Página Principal</a>
+        </div>
+    </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83877.83188272969!2d1.9575776506493083!3d48.93097051348869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66206d8924985%3A0x40b82c3688c3840!2sSaint-Germain-en-Laye%2C%20Fran%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1693594676247!5m2!1spt-BR!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </body>
+</html>

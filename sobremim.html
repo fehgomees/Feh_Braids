@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+    <title>Feh Braids / Hair Style</title>
+</head>
+<body>
+    <div class="container show-menu">
+        <div class="header-container">
+            <h1 class="logo" >Feh<span>Braids</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelos2.html">Modelos</a></li>
+                    <li><a href="contatos.html">Fale Conosco</a></li>
+                    <!--<li><a href="formulario.html">Cadastro de Clientes</a></li>-->
+                    <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+            <div class="icones-container-nav" >
+                <img src="imagnes/bolsa-de-compras.gif" />
+                <img src="imagnes/barra-de-menu.png" class="menu-button" />
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-icone-conteiner">
+            <div class="header-button-side">
+                <div class="header-button-left">
+                    <h2><i>Você ja é linda, mais de trança fica maravilhosa!</i></h2>
+                    
+                    <p><i> Não tenha medo de mudanças!</i></p>
+                    <p><i> Mude por você, eleve sempre sua auto-estima, porque extiste uma mulher poderosa ai dentro, que o mundo precisa conhecer.</i></p>
+    
+                    <button id="meuBotao">Ver Agora &#8594;</button>
+    
+                    </div>
+                   <div class="header-button-right">
+                    <img src="imagnes/logo_nago1.png" alt="#"/>
+                   </div>
+            </div>
+         </div>
+        </header>
+    
+        <script>
+    
+        document.getElementById("meuBotao").addEventListener("click", function() {
+            window.location.href = "modelos.html"; 
+        });
+            const container = document.querySelector('.container'); 
+            const menuButton = document.querySelector(".menu-button");
+    
+            menuButton.addEventListener('click', () => {
+                container.classList.toggle("show-menu");
+            }); 
+            
+        </script>
+      </body>
+    </html>
