@@ -1,0 +1,613 @@
+/*PARA TODA A PÁGINA*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to bottom, #17f4ea, #00e7ff, #0bd6ff, #78c1ff, #b2a9ff, #b3aaff, #b4aaff, #b5abff, #83c4ff, #48daff, #2cedff, #5ffbf1);
+}
+
+
+/*DIV CLASS DO BODY*/
+.header-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*DIV CONTAINER DO BODY*/
+.container {
+    background-color: rgb(197, 250, 245);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 99;
+}
+
+/*LISTA DO MENU*/
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*NOME DO H1*/
+.logo {
+    color: black;
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo span {
+    color: palevioletred;
+}
+
+/*ALINHAMENTO DO MENU*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*ICONES DO MENU - REMOVER FUNDO*/
+.icones-container-nav {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: multiply;
+}
+/*ICONES DO MENU*/
+.icones-container-nav img {
+    width: 30px;
+    cursor: pointer;  
+}
+
+/*ICONES DO MENU*/
+.icones-container-nav img:first-child {
+    margin-right: 1rem;
+}
+
+/*MENU*/
+nav ul li {
+    color: black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*MOVIMENTO DO MENU*/
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;  
+}
+
+/*BOTÃO DO MENU*/
+.menu-button {
+    display: none;
+}
+
+
+/*HEADER*/
+
+.gray-background {
+    background-color: #c669f1;
+
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.header-button-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+
+}
+
+/*ESTILO LADO ESQUEDO*/
+.header-button-left {
+    height: 100%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.header-button-left h3  {
+    font-family: Sacramento;
+    font-size: 3.8rem;
+    color: #a0144e;
+    margin-bottom: 1.5rem; 
+    /*text-shadow: 1px 1px 4px rgb(255, 253, 253);*/
+}
+
+.header-button-left span  {
+    color: rgb(218, 137, 164);
+    text-shadow: 4px 4px 6px rgb(14, 13, 13);
+}
+
+.header-button-left p {
+    line-height: 1.5rem;
+    padding: 2px;
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
+
+/*ESTILIZANDO O BOTÃO*/
+.header-button-left button {
+    background-color: rgb(216, 112, 147);
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: indigo;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+
+}
+
+/*TRANSIÇÃO DE COR DO BOTÃO*/
+
+.header-button-left button:hover {
+    background-color: rgb(224, 40, 200);
+}
+
+/*ESTILO LADO DIREITO*/
+.header-button-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-right img {
+    width: 130%;
+    left: 10%;
+    /*border-radius: 100rem; arredondar a foto*/
+}
+
+/*RESPONSIVO*/
+@media (max-width: 1000px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-button-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: rgb(250, 163, 231);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+/*HEADER*/
+
+/*CONTEÚDO PRINCIPAL*/
+.gray-background {
+    background-color: #c669f1;
+    height: 10%;
+}
+
+.page-inner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cols {
+    position: relative;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+
+}
+
+.cols-1 img{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    mix-blend-mode: darken;
+
+
+}
+
+.cols-1 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(252, 187, 209);
+    margin: 15px;
+
+}
+
+.cols-1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cols cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+}
+
+/*ARRUMAR AS IMAGENS*/
+.cols-3 img {
+    border-radius: 70px 10px;
+    border-width: 5px;
+    border-color: #c669f1;
+    border-style:ridge;
+    max-width: 100%;
+    float: left;
+    display: grid;
+    align-items: center;
+    z-index: 0;
+}
+
+
+
+.cols-3 {
+   grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.cols>* {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+/*ARRUMAR AS IMAGENS*/
+
+.cols>* img:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline {
+    width: 100px;
+    height: 5px;
+    background: #09f7f7;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+
+.product {
+    color: rgb(14, 13, 13);
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    position: relative;
+    display: inline-block;
+}
+
+.mensagem-box {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    text-align: center;
+    transform: translate3d(-50%, -50%);
+    background-color: rgb(248, 113, 181);
+    border: 1px solid #fdfcfc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgb(250, 249, 250);
+    padding: 10px;
+    display: none;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.product-name {
+    font-weight: 600;
+    margin-top: 0.4rem;
+
+}.comprar-btn {
+    background-color: rgb(248, 136, 174);
+    color: #fcfafc;
+    margin-top: 1%;
+    padding: 10px 30px;
+    border-color: rgb(138, 240, 5);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.comprar-btn:hover {
+    background-color: #f00fa5;
+}
+
+
+
+.product:hover .mensagem-box {
+    display: block;
+}
+
+.rate {
+    color: rgb(189, 7, 77);
+    font-size: 1.5rem;
+}
+
+.product-price span {
+    font-weight: 600;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 800px) {
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .mensagem-box {
+        max-width: 95%; /* Reduza a largura máxima para telas menores */
+    }
+    
+    .message-box p {
+        font-size: 1em; /* Ajuste o tamanho da fonte para telas menores */
+    }
+
+    .comprar-btn {
+        background-color: rgb(248, 136, 174);
+        color: #fcfafc;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+        width: 100%; 
+        max-width: 200px;
+        text-align: center; 
+    }
+    
+    .comprar-btn:hover {
+        background-color: #f00fa5;
+    }
+}
+
+.pagina2 {
+    align-items: center;
+    margin-left: 41rem;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ede2ee;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;  
+}
+
+.pagina2:hover {
+    transition: 0.2s ease;
+    transform: scale(1.1);
+    background-color: rgb(241, 176, 209);
+    box-shadow: 0px 4px 6px rgb(252, 187, 209);
+}
+
+/*RESPONSIVO DAS MUDANÇA DE PÁGINA*/
+    
+@media screen and (max-width: 768px) {
+    .pagina2 {
+        margin-left: 0;
+    }
+}
+
+/*Main - CONTEÚDO PRINCIPAL*/
+
+/*DEPOIMENTOS*/
+
+.depoimentos {
+   display: flex;
+   padding: 4rem 1rem;
+   justify-content: space-evenly;
+}
+
+.depoimentos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px purple;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.depoimentos :hover{
+    transform: translateY(-5px);
+}
+
+.depoimentos p {
+    margin: 5px 0;
+}
+
+.depoimentos p:first-child {
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(183, 0, 255);
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.depoimentos p:last-child {
+    font-weight: bold;
+}
+
+/*RESPONSIVO DEPOIMENTOS*/
+@media (max-width: 800px){
+    .depoimentos {
+        flex-direction: column;
+    }
+
+    .depoimentos {
+        margin-bottom: 1.2rem;
+    }
+
+}
+    
+/*DEPOIMENTOS*/
+
+/*FOOTER*/
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    color: rgb(65, 7, 121);
+    padding: 1rem 4rem;
+    gap: 18rem;
+}
+
+.security *{
+    margin: 1rem 0;
+}
+
+.security> p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #3f034b;
+}
+
+.security> div {
+    display: block;
+}
+
+.security div img {
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*NOME DO H1*/
+.logo-footer {
+    color: black; 
+    text-align: center; 
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo-footer span{
+    color: rgb(224, 22, 157);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(97, 5, 105);
+}
+
+.links-footer h3{
+    color: rgb(46, 1, 40);
+    margin-bottom: 0.8rem;
+}
+
+.links-footer ul {
+    list-style: none;
+}
+.links-footer ul li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.pagamentos h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.pagamentos img {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.copyrigth {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.voltar {
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 1200px){
+    .footer-content {
+        display: inline;
+        font-size: 0.8rem;
+    }
+
+    .footer-content div {
+        padding: 1rem;
+    }
+
+    .security div {
+        display: inline;
+    }
+
+    .security div img {
+        width: 120px;
+    }
+
+    
+    .pagamentos h4 {
+        font-size: 16px; 
+        margin: 10px 0; 
+    }
+    
+    .pagamentos img {
+        max-width: 100%;
+    }
+    
+
+    .copyrigth {
+        font-size: 0.8rem;
+    }
+}
+
+/*FOOTER*/
+
+

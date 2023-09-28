@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+/*CORPO DO FORMULÁRIO*/
+form {
+    width: 30%;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 12rem;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contato-input {
+    height: 200px;
+    text-align: left;
+}
+
+label {
+     margin-bottom: 5px;
+     text-align: center;
+}
+
+input[type="text"],
+input[type="tel"],
+
+textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+fieldset {
+   margin-bottom: 20px;
+
+}
+
+
+/*CAIXA DE TEXTO*/
+.caixa {
+    width: initial;
+    margin-left: 15rem;
+    display: flex;
+
+    
+   
+}
+
+iframe {
+    margin-left: 28%;
+    padding: 30px;
+    
+
+}
+
+/*BOTÃO ENVIAR*/
+.botao {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5px;
+}
+
+/*CLICK VOLTAR*/
+.voltar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

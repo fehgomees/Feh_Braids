@@ -1,0 +1,146 @@
+/*PARA TODA A PÁGINA*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to bottom, #17f4ea, #00e7ff, #0bd6ff, #78c1ff, #b2a9ff, #b3aaff, #b4aaff, #b5abff, #83c4ff, #48daff, #2cedff, #5ffbf1);
+}
+
+
+/*
+
+.gray-background {
+    background-color: #c669f1;
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    color: rgb(65, 7, 121);
+    padding: 1rem 4rem;
+    gap: 18rem;
+}
+
+.security *{
+    margin: 1rem 0;
+}
+
+.security> p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #3f034b;
+}
+
+.security> div {
+    display: block;
+}
+
+.security div img {
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*NOME DO H1*/
+.logo-footer {
+    color: black; 
+    text-align: center; 
+}
+/*MUDAR COM DA LETRA EM SPAN*/
+.logo-footer span{
+    color: rgb(224, 22, 157);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(97, 5, 105);
+}
+
+.links-footer h3{
+    color: rgb(46, 1, 40);
+    margin-bottom: 0.8rem;
+}
+
+.links-footer ul {
+    list-style: none;
+}
+.links-footer ul li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.pagamentos h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.pagamentos img {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.copyrigth {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.voltar {
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 1200px){
+    .footer-content {
+        display: inline;
+        font-size: 0.8rem;
+    }
+
+    .footer-content div {
+        padding: 1rem;
+    }
+
+    .security div {
+        display: inline;
+    }
+
+    .security div img {
+        width: 120px;
+    }
+
+    
+    .pagamentos h4 {
+        font-size: 16px; 
+        margin: 10px 0; 
+    }
+    
+    .pagamentos img {
+        max-width: 100%;
+    }
+    
+
+    .copyrigth {
+        font-size: 0.8rem;
+    }
+}
+
+/*FOOTER*/
+
+

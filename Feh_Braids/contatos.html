@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contatos.css">
+
+    <title>Fale Conosco</title>
+
+</head>
+     <body>
+        
+        <div class="container show-menu">
+            <div class="header-container">
+    
+                <h1 class="logo">Braids<span>Style</span></h1>
+    
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li><a href="modelos2.html">Modelos</a></li>
+                        <li><a href="contatos.html">Fale Conosco</a></li>
+                        <li><a href="formulario.html">Cadastro de Clientes</a></li>
+                        <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="icones-container-nav" >
+                    <img src="imagnes/bolsa-de-compras.gif"/>
+                    <img src="imagnes/barra-de-menu.png" class="menu-button" />
+                </div>
+    
+            </div>
+        </div>
+                
+        <h2><u>Fale Conosco</u></h2>        
+            
+                <form action="processar_formulario.php" method="POST">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem"><strong>Mensagem:</strong></label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+                
+            </form>
+                <br><br>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+            </fieldset>
+
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83877.83188272969!2d1.9575776506493083!3d48.93097051348869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66206d8924985%3A0x40b82c3688c3840!2sSaint-Germain-en-Laye%2C%20Fran%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1693594676247!5m2!1spt-BR!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    
+        <div class="voltar">
+            <a href="index.html">Voltar à Página Principal</a>
+        </div>
+
+        <footer class="gray-background">
+            <div class="page-inner-content footer-content">
+                 <div class="security">
+                    <p>Site Seguro</p>
+                    <div>
+                        <img src="imagnes/seguro.png" alt="">
+                    </div>
+                 </div>
+
+             <div class="logo-footer">
+                <h1 class="logo">Braids<span>Style</span></h1>
+                <p>
+                    &#9825 Seja linda do jeito que você quiser!
+                </p>
+                <p>Fale Conosco: (13) 98840-8847
+                    <p>
+                     E-mail: fernandasousagomes52@gmail.com
+                    </p> 
+            </div>
+
+            <div class="links-footer">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Política</li>
+                </ul>
+            </div>
+            </div>
+        
+            <div class="page-inner-content pagamentos">
+                <h4>Formas de Pagamento</h3>
+                    <img src="imagnes/pagamentos2.png" alt="">
+            </div>
+        
+            <hr class="page-inner-content">
+            <div class="page-inner-content copyrigth">
+                <p>&copy Copyrigth 2023 - Fernanda Gomes - Todos os Direitos Reservados.</p>
+            </div>
+        
+        </footer>
+
+        <script>
+            const container = document.querySelector('.container'); 
+            const menuButton = document.querySelector(".menu-button");
+    
+            menuButton.addEventListener('click', () => {
+                container.classList.toggle("show-menu");
+            }); 
+        </script>
+    </body>
+ </html>
