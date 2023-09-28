@@ -119,10 +119,10 @@ nav ul li:hover {
     text-align: center;
 }
 
-.header-button-left h3  {
+.header-button-left h2  {
     font-family: Sacramento;
-    font-size: 3.8rem;
-    color: #a0144e;
+    font-size: 7rem;
+    color:  #a0144e;
     margin-bottom: 1.5rem; 
     /*text-shadow: 1px 1px 4px rgb(255, 253, 253);*/
 }
@@ -567,7 +567,7 @@ nav ul li:hover {
 }
 
 .voltar {
-    margin: 10px;
+    margin: 8px;
     text-align: center;
     font-size: 18px;
 }

@@ -1,0 +1,23 @@
+.links-footer-redes {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.links-footer-redes h3 {
+    text-align: center;
+}
+
+.links-footer-redes ul li {
+    align-items: center;
+    display: inline-block;
+
+    margin-right: -1rem;
+}
+
+.links-footer-redes img {
+    width: 55px;
+    
+}

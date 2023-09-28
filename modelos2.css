@@ -404,13 +404,12 @@ nav ul li:hover {
 }
 
 .pagina2 {
-    margin: 20px;
+    align-items: center;
+    margin-left: 39rem;
+    margin-top: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    width: 200px;
-    margin-left: 36rem;
-    display: flex;
-    align-items: center;
+    display: inline-block;
     justify-content: center;
     padding: 10px 20px;
     background-color: #ede2ee;

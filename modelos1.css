@@ -488,11 +488,9 @@ nav ul li:hover {
     }
 
 }
-    
 /*DEPOIMENTOS*/
 
 /*FOOTER*/
-
 .footer-content {
     display: flex;
     align-items: center;
@@ -542,6 +540,7 @@ nav ul li:hover {
 
 .links-footer ul {
     list-style: none;
+    
 }
 .links-footer ul li{
     margin-bottom: 0.5rem;
@@ -557,9 +556,10 @@ nav ul li:hover {
 }
 
 .pagamentos img {
-    max-width: 450px;
+    max-width: 430px;
     display: block;
     margin: 0 auto;
+    height: 60px;
 }
 .copyrigth {
     padding: 1rem 0;
@@ -567,7 +567,7 @@ nav ul li:hover {
 }
 
 .voltar {
-    margin: 10px;
+    margin: 8px;
     text-align: center;
     font-size: 18px;
 }
