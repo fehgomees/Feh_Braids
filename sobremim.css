@@ -82,11 +82,6 @@ nav ul li:hover {
     font-weight: bold;  
 }
 
-/*BOTÃO DO MENU*/
-.menu-button {
-    display: none;
-}
-
 
 /**/
 .header-button-side {
@@ -114,10 +109,11 @@ nav ul li:hover {
 .header-button-left p {
     position: relative;
     top: -25px;
-    margin-left: 8%;
+    ;
+    margin-left: 5%;
     font-size: 20px;
     line-height: 1.2rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.4rem;
   
 }
 
@@ -129,25 +125,31 @@ nav ul li:hover {
 
 
 }
+.header-my-class h1{
+    text-align: center;
+    margin-bottom: -5%;
+    font-style: italic;
+    
 
-
-
-/*ESTILIZANDO O BOTÃO*/
-.header-button-left button {
-    background-color: rgb(216, 112, 147);
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 3.8rem;
-    border-radius: 9999px;
-    color: indigo;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.2s;
+}
+.header-my-class h4 {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 1.6%;
+    font-size: 20px;
 }
 
-/*TRANSIÇÃO DE COR DO BOTÃO*/
-.header-button-left button:hover {
-    background-color: rgb(224, 40, 200);
+.header-my-class p {
+    font-size: 18px;
+    margin-left: 38%;
+    text-align: left;
+}
+
+.header-my-class img {
+    width: 29%;
+    margin-top: -18%;
+    margin-left: 7%;
+    border-style: groove;
 }
 
 /*ESTILO LADO DIREITO*/
@@ -155,15 +157,144 @@ nav ul li:hover {
     flex-basis: 50%;
     margin-top: -20rem;
     align-items: center;
+    margin: 0;
     z-index: 1;
-    margin: 15px;
-    justify-content: center;
+    
 }
-
+/*MINHA FOTO*/
 .header-button-right img {
-    width: 50%;
+    width: 60%;
+    margin-top: -1rem;
+    margin-left: 10rem;
     border-radius: 100rem;
 }
+
+.header-flores img {
+    width: 80%;
+    margin-left: 17%;
+    margin-top: auto;
+    
+}
+
+/*PROFESSORA*/
+.header-my-teacher h3 {
+    text-align: center;
+    margin-top: 8%;
+    font-size: 31px;    
+}
+
+.header-my-teacher p {
+    margin-left: 6.5%;
+    margin-top: -15%;
+    font-size: 18px;  
+}
+
+.header-my-teacher b {
+    text-transform: uppercase;
+}
+
+.header-my-teacher span {
+    color: #a0144e;
+    text-shadow: 3px 2px 4px #f66cfd; 
+    
+}
+
+.header-my-teacher img {
+    width: 17%;
+    border-radius: 100rem;
+    border-style: ridge;
+    margin-left: 75%;  
+}
+
+.line-decor {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/*MONITORA*/
+.header-my-monitora h4  {
+    margin-top: 6%;
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.header-my-monitora span {
+    color: #a0144e;
+    text-shadow: 3px 2px 4px rgb(250, 137, 235); 
+    
+}
+
+.header-my-monitora p{
+    margin-left: 27%;
+    margin-top: -16%;
+    font-size: 18.2px;
+     
+}
+.header-my-monitora img {
+    width: 17%;
+    border-radius: 100rem;
+    border-style: ridge;
+    margin-left: 9%;  
+}
+
+.line-decor1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+.header-thanks h3 {
+    margin: 5%;
+    margin-bottom: 1%;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(8, 76, 202);
+    
+}
+
+.header-thanks  p {
+    font-size: 18px;
+    margin-bottom: -3%; 
+    text-align: center;   
+}
+
+.header-thanks-amanda {
+    width: 7.9%;
+    margin-top: -10%;
+    margin-left: 35rem;
+}
+
+.header-thanks-lethycya {
+    width: 8%;
+    align-items: center;
+}
+
+.header-names {
+    margin-top: -62px;
+    margin-left: 40%;
+    font-size: 15.3px;
+    letter-spacing: 1px;
+}
+
+.thank-you p{
+    margin-top: -3%;
+    font-size: 18px;
+    text-align: center;
+    margin: 45px;    
+}
+
+.thank-you img {
+    width: 40%;
+    margin-top: -4%;
+    margin-left: 28rem;
+}
+
+/*RESPONSIVO*/
+
 
 
 
@@ -207,4 +338,145 @@ nav ul li:hover {
     .header-button-left .my-name p i {
         margin-left: -3px;
     }
+
+
+    .header-my-class p {
+        font-size: 16px; 
+        margin-left: 10%; 
+        text-align: center; 
+    }
+    
+    .header-my-class img {
+        width: 50%; 
+        margin-top: 0; 
+        margin-left: 30%; 
+        display: block; 
+        align-items: center;
+    }
+
+    .header-button-right {
+        flex-basis: 100%; /* Ocupa toda a largura */
+        margin-top: 0; /* Remove a margem superior negativa */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+    
+    .header-button-right img {
+        width: 50%; /* Reduz o tamanho da imagem */
+        margin-left: auto; /* Centraliza a imagem horizontalmente */
+    }
+    
+    .header-flores img {
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+        
+       
+    .header-my-teacher h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+        
+    .header-my-teacher p {
+        margin-left: 3%; 
+        margin-top: 5%; 
+        font-size: 16px; 
+        align-items: center;
+    }
+        
+    .header-my-teacher img {
+        width: 40%; /* Reduza a largura da imagem para telas menores */
+        margin-left: 30%; /* Ajuste a margem esquerda */
+        
+    }
+        
+    .line-decor {
+        font-size: 24px; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .header-my-monitora h4 {
+        font-size: 24px;
+        margin-top: 3%;
+    }
+    
+    .header-my-monitora p {
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    
+    .header-my-monitora img {
+        width: 38%;
+        margin-left: 30%;
+        align-items: center;
+    }
+
+        .line-decor1 {
+            font-size: 22px;
+            margin-top: 1%;
+        }
+    
+        .header-thanks h3 {
+            font-size: 32px;
+        }
+    
+        .header-thanks p {
+            font-size: 16px;
+        }
+    
+        .header-thanks-amanda {
+            width: 15%;
+            margin-left: 10rem;
+    
+        }
+    
+        .header-thanks-lethycya {
+            width: 15%;
+        }
+
+        .header-names {
+            margin-left: 25%; /* Reduza a margem para telas menores */
+            font-size: 14px; /* Reduza o tamanho da fonte */
+            margin-top: 0.3%;
+        }
+    
+        .thank-you p {
+            margin: 15px; /* Reduza a margem para telas menores */
+            font-size: 16px; /* Reduza o tamanho da fonte */
+        }
+    
+        .thank-you img {
+            width: 80%; /* Faça a imagem ocupar a largura da tela */
+            margin: 0 auto; /* Centralize a imagem */
+        }
+    }
+
+.voltar {
+    margin: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.links-footer-redes {
+    width: 30%;
+    height: 5rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links-footer-redes a {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links-footer-redes a img {
+    height: 100%;
+}
+
+.copyrigth {
+    padding: 1rem 0;
+    text-align: center;
 }

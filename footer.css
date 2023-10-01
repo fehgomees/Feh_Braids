@@ -31,7 +31,7 @@ body {
     align-items: center;
     color: rgb(65, 7, 121);
     padding: 1rem 4rem;
-    gap: 18rem;
+    gap: 21rem;
 }
 
 .security *{
@@ -79,6 +79,25 @@ body {
 .links-footer ul li{
     margin-bottom: 0.5rem;
     cursor: pointer;
+}
+
+.links-footer-redes {
+    width: 30%;
+    height: 5rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links-footer-redes a {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links-footer-redes a img {
+    height: 100%;
 }
 
 .pagamentos h4 {
