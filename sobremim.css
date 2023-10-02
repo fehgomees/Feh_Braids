@@ -355,19 +355,19 @@ nav ul li:hover {
     }
 
     .header-button-right {
-        flex-basis: 100%; /* Ocupa toda a largura */
-        margin-top: 0; /* Remove a margem superior negativa */
-        text-align: center; /* Centraliza o conteúdo */
+        flex-basis: 100%; 
+        margin-top: 0; 
+        text-align: center; 
     }
     
     .header-button-right img {
-        width: 50%; /* Reduz o tamanho da imagem */
-        margin-left: auto; /* Centraliza a imagem horizontalmente */
+        width: 50%; 
+        margin-left: auto; 
     }
     
     .header-flores img {
-        width: 100%; /* Ocupa toda a largura disponível */
-        margin-left: 0; /* Remove a margem esquerda */
+        width: 100%; 
+        margin-left: 0; 
     }
         
        
@@ -385,13 +385,13 @@ nav ul li:hover {
     }
         
     .header-my-teacher img {
-        width: 40%; /* Reduza a largura da imagem para telas menores */
-        margin-left: 30%; /* Ajuste a margem esquerda */
+        width: 40%; 
+        margin-left: 30%;
         
     }
         
     .line-decor {
-        font-size: 24px; /* Reduza o tamanho da fonte para telas menores */
+        font-size: 24px; 
     }
 
     .header-my-monitora h4 {
@@ -411,45 +411,46 @@ nav ul li:hover {
         align-items: center;
     }
 
-        .line-decor1 {
-            font-size: 22px;
-            margin-top: 1%;
-        }
-    
-        .header-thanks h3 {
-            font-size: 32px;
-        }
-    
-        .header-thanks p {
-            font-size: 16px;
-        }
-    
-        .header-thanks-amanda {
-            width: 15%;
-            margin-left: 10rem;
-    
-        }
-    
-        .header-thanks-lethycya {
-            width: 15%;
-        }
-
-        .header-names {
-            margin-left: 25%; /* Reduza a margem para telas menores */
-            font-size: 14px; /* Reduza o tamanho da fonte */
-            margin-top: 0.3%;
-        }
-    
-        .thank-you p {
-            margin: 15px; /* Reduza a margem para telas menores */
-            font-size: 16px; /* Reduza o tamanho da fonte */
-        }
-    
-        .thank-you img {
-            width: 80%; /* Faça a imagem ocupar a largura da tela */
-            margin: 0 auto; /* Centralize a imagem */
-        }
+    .line-decor1 {
+        font-size: 22px;
+        margin-top: 1%;
     }
+    
+    .header-thanks h3 {
+        font-size: 32px;
+    }
+    
+    .header-thanks p {
+        font-size: 16px;
+    }
+    
+    .header-thanks-amanda {
+        width: 15%;
+        margin-left: 10rem;
+    
+    }
+    
+    .header-thanks-lethycya {
+        width: 15%;
+    }
+
+    .header-names {
+        margin-left: 25%; 
+        font-size: 14px; 
+        margin-top: 0.3%;
+    }
+    
+    .thank-you p {
+        margin: 15px; 
+        font-size: 16px; 
+    }
+    
+    .thank-you img {
+        width: 80%;
+        align-items: center;
+        margin: 0 auto; 
+    }
+}
 
 .voltar {
     margin: 8px;
