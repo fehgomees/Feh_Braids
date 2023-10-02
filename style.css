@@ -161,7 +161,11 @@ nav ul li:hover {
         text-align: center;
         padding-top: 4rem;
         font-size: 4rem;
-        
+    }
+
+    .header-button-left h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
     }
 
     nav {
