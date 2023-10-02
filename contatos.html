@@ -9,12 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icon/logo_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="contatos.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
 
     <title>Fale Conosco</title>
 
 </head>
      <body>
         
+        <!--LINGUAGEM BRASILEIRA DE SINAIS-->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      
+      <style>
+        .access-button {
+            width:20%;
+            border-radius: 100px !important;
+            border: 5px solid #fdffffc5 !important;
+        }
+      </style>
+
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+    <!--LINGUAGEM BRASILEIRA DE SINAIS-->
+
         <div class="container show-menu">
             <div class="header-container">
     
@@ -118,6 +143,7 @@
         </footer>
 
         <script>
+            
             const container = document.querySelector('.container'); 
             const menuButton = document.querySelector(".menu-button");
     
