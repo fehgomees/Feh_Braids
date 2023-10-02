@@ -187,6 +187,7 @@ nav ul li:hover {
         flex-direction: column;
         text-align: center;
         padding-top: 4rem;
+        font-size: 5rem;
     }
 
     nav {

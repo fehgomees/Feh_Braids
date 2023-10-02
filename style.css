@@ -147,7 +147,7 @@ nav ul li:hover {
 }
 
 /*RESPONSIVO*/
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .logo{
         font-size: 1.2rem;
     }
@@ -160,6 +160,8 @@ nav ul li:hover {
         flex-direction: column;
         text-align: center;
         padding-top: 4rem;
+        font-size: 4rem;
+        
     }
 
     nav {
