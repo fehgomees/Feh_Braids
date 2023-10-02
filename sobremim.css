@@ -399,6 +399,7 @@ nav ul li:hover {
     }
     
     .header-my-monitora p {
+        margin-left: 21px;
         margin-top: 5%;
         font-size: 16px;
     }
