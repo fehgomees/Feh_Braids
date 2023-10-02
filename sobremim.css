@@ -337,6 +337,10 @@ nav ul li:hover {
         padding: 0.8rem;
     }
 
+    .header-button-left h2 {
+        margin-right: 1.6%;
+    }
+
     .header-button-left p {
         margin-right: 3%;
         margin-left: 3%;
