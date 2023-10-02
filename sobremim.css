@@ -378,8 +378,7 @@ nav ul li:hover {
     }
     
         
-    .header-my-teacher p {
-        margin-left: 1%; 
+    .header-my-teacher p { 
         margin-top: 5%; 
         font-size: 16px; 
     }
@@ -400,7 +399,6 @@ nav ul li:hover {
     }
     
     .header-my-monitora p {
-        margin-left: 1%;
         margin-top: 5%;
         font-size: 16px;
     }
